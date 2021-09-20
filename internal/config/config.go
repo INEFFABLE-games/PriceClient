@@ -7,7 +7,8 @@ import (
 
 // Config structure for parse environment variables
 type Config struct {
-	GrpcPort string `env:"GRPCPORT,required,notEmpty"`
+	GrpcPort      string `env:"GRPCPORT,required,notEmpty"`
+	PositionsPort string `env:"POSITIONSPORT,required,notEmpty"`
 }
 
 // NewConfig create new config object.
